@@ -23,7 +23,7 @@ const Mint = () => {
         <Col md={6}>
           <div className="mint-img-wrapper">
             <div className="mint-img">
-              <Image src={mintImg} />
+              <Image src={mintImg} alt="mint-image" />
             </div>
           </div>
         </Col>
