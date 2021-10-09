@@ -5,7 +5,7 @@ const Mint = () => {
   return (
     <section className="mint">
       <Row>
-        <Col md={6}>
+        <Col xl={6}>
           <div className="mint-box">
             <h2 className="mint-heading">Mint</h2>
             <p>Enter the amount of nipples you would like to buy (5 max):</p>
@@ -20,7 +20,7 @@ const Mint = () => {
             </div>
           </div>
         </Col>
-        <Col md={6}>
+        <Col xl={6}>
           <div className="mint-img-wrapper">
             <div className="mint-img">
               <Image src={mintImg} alt="mint-image" />

@@ -66,6 +66,7 @@ ul {
     letter-spacing: 2px;
     margin-top: -50px;
     text-align: left;
+    line-height: 38px;
     span {
       font-size: 34px;
       letter-spacing: 7px;
@@ -188,7 +189,7 @@ ul {
         position: absolute;
         background-color: #fe2a77;
         height: 100%;
-        width: 158px;
+        width: 105%;
         top: 0px;
         right: -4px;
         z-index: -1;
@@ -386,6 +387,8 @@ ul {
 }
 .roadmap-box {
   ul {
+    margin: 0;
+    padding: 0;
     li {
       color: black;
       font-family: "OrangeKid";
@@ -416,5 +419,215 @@ ul {
     font-family: "OrangeKid";
     color: white;
     letter-spacing: 15px;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .mint-box {
+    padding-left: 100px;
+  }
+  .mint-img-wrapper {
+    .mint-img {
+      top: -30px;
+    }
+  }
+}
+@media screen and (max-width: 1400px) {
+  .mint-box {
+    padding-left: 50px;
+  }
+  .mint-img-wrapper {
+    .mint-img {
+      top: 0px;
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  .mint {
+    height: auto;
+  }
+  .mint-box {
+    padding-left: 50px;
+  }
+  .mint-img-wrapper {
+    position: static;
+    height: auto;
+    margin-top: 50px;
+    .mint-img {
+      position: static;
+      transform: translateX(0);
+    }
+  }
+  .feature-bg-img {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .feature-bg-img {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .fimage-box {
+    text-align: center;
+  }
+  .blocks {
+    height: 430px;
+    width: 100%;
+    margin-top: 50px;
+  }
+  .roadmap {
+    height: 100vh;
+    .roadmap-box {
+      ul {
+        li {
+          font-size: 40px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 940px) {
+  .banner {
+    padding-left: 10px;
+    padding-right: 10px;
+    p {
+      margin-top: -85px;
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  .banner {
+    p {
+      margin-top: -100px;
+      font-size: 24px;
+      line-height: 32px;
+      span {
+        font-size: 26px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .banner {
+    padding-top: 20px;
+    padding-bottom: 100px;
+    height: auto;
+    p {
+      margin-top: -50px;
+      line-height: 29px;
+    }
+  }
+}
+@media screen and (max-width: 740px) {
+  .four {
+    h2 {
+      left: 20px;
+    }
+    .expand {
+      left: 30px;
+    }
+  }
+}
+@media screen and (max-width: 550px) {
+  .four {
+    h2 {
+      font-size: 200px;
+      bottom: -62px;
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .four {
+    height: 210px;
+    h2 {
+      font-size: 160px;
+      bottom: -52px;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .mint-box {
+    .input-box {
+      .mint-total {
+        font-size: 36px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .mint-box {
+    padding-left: 20px;
+    padding-right: 20px;
+    .input-box {
+      flex-direction: column;
+      align-items: flex-start;
+      .input-wrapper {
+        margin-right: 0;
+        margin-bottom: 20px;
+        &:before {
+          width: 102%;
+        }
+        input {
+          width: 100%;
+        }
+      }
+      .mint-total {
+        margin-top: 20px;
+      }
+    }
+  }
+  .mint-img-wrapper {
+    padding: 0px 20px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .heading {
+    h2 {
+      font-size: 80px;
+    }
+  }
+}
+@media screen and (max-width: 580px) {
+  .main-feature {
+    padding-top: 100px;
+    .main-feature-top {
+      padding: 0px 20px;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .roadmap {
+    padding: 60px 0px;
+    height: auto;
+    h2 {
+      font-size: 70px;
+    }
+    .roadmap-row {
+      margin-top: 30px;
+    }
+    .roadmap-box {
+      ul {
+        li {
+          font-size: 32px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+  .team {
+    h2 {
+      top: 0;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .team {
+    h2 {
+      font-size: 60px;
+      text-shadow: 0px 0px 10px #4a0089;
+    }
   }
 }

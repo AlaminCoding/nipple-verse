@@ -6,7 +6,7 @@ const Roadmap = () => {
       <h2>Roadmap</h2>
       <Container>
         <Row className="roadmap-row">
-          <Col md={4}>
+          <Col md={6} lg={5} xl={4} sm={12}>
             <div className="roadmap-box">
               <ul>
                 <li>lorem ipsum</li>
@@ -15,7 +15,7 @@ const Roadmap = () => {
               </ul>
             </div>
           </Col>
-          <Col md={4}>
+          <Col md={6} lg={5} xl={4} sm={12}>
             <div className="roadmap-box">
               <ul>
                 <li>lorem ipsum</li>

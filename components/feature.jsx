@@ -12,14 +12,14 @@ const Feature = () => {
       <div className="main-feature">
         <div className="main-feature-top">
           <Row>
-            <Col md={5}>
+            <Col xl={5}>
               <div className="feature-img">
                 <div className="fimage-box">
                   <Image src={featureTopLogo} alt="" />
                 </div>
               </div>
             </Col>
-            <Col md={7}>
+            <Col xl={7}>
               <div className="blocks">
                 <div className="block block1"></div>
                 <div className="block block2 common-block"></div>
@@ -36,7 +36,7 @@ const Feature = () => {
           </Row>
           <Row className="nipple-first-row">
             {nippleFirst.map((element, index) => (
-              <Col md={2} key={index}>
+              <Col xs="6" sm={6} md={4} lg={2} key={index}>
                 <div className="nipple-box">
                   <Image src={element} alt="" />
                 </div>
@@ -45,7 +45,7 @@ const Feature = () => {
           </Row>
           <Row className="mt-3">
             {nippleMiddle.map((element, index) => (
-              <Col md={2} key={index}>
+              <Col xs="6" sm={6} md={4} lg={2} key={index}>
                 <div className="nipple-box">
                   <Image src={element} alt="" />
                 </div>
@@ -54,7 +54,7 @@ const Feature = () => {
           </Row>
           <Row className="nipple-last-row mt-3">
             {nippleLast.map((element, index) => (
-              <Col md={2} key={index}>
+              <Col xs="6" sm={6} md={4} lg={2} key={index}>
                 <div className="nipple-box">
                   <Image src={element} alt="" />
                 </div>
