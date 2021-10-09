@@ -36,7 +36,7 @@ const Roadmap = () => {
               -Because rare traits aren't the only beautiful thing, there will
               be a weekly contest where the community can vote the best looking
               nipple winners will be displayed in a special gallery named
-              "Beauty lays in the nipple of the beholder".
+              &apos;&apos;Beauty lays in the nipple of the beholder&apos;&apos;.
             </li>
           </ul>
         </div>
