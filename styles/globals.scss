@@ -220,6 +220,7 @@ ul {
   }
 }
 // Feature Start
+
 .heading {
   width: 100%;
   height: 200px;
@@ -235,5 +236,153 @@ ul {
     text-transform: uppercase;
     font-size: 100px;
     letter-spacing: 10px;
+  }
+}
+.fimage-box {
+  text-align: right;
+}
+.main-feature {
+  padding-top: 200px;
+  box-sizing: border-box;
+  background-image: linear-gradient(#140143, #a100df, #0b0136);
+  .main-feature-top {
+    padding: 0px 85px;
+  }
+}
+.nipple-box {
+  margin-top: 20px;
+}
+.nipple-first-row {
+  justify-content: flex-end;
+}
+.nipple-last-row {
+  justify-content: flex-end;
+}
+.feature-bg-img {
+  margin-top: -100px;
+}
+.blocks {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  .block {
+    position: absolute;
+  }
+  .block1 {
+    height: 80px;
+    width: 15px;
+    background-color: #e0dca2;
+    top: 0;
+    right: 30%;
+    box-shadow: 0px 0px 18px #e0dca2;
+  }
+  .common-block {
+    height: 12px;
+    width: 40px;
+  }
+  .block2 {
+    background-color: #30d2e5;
+    box-shadow: 0px 0px 18px #30d2e5;
+    top: 50px;
+    left: 20%;
+  }
+  .block3 {
+    background-color: #2c73e4;
+    box-shadow: 0px 0px 18px #2c73e4;
+    top: 90px;
+    left: 20%;
+  }
+  .block4 {
+    background-color: #30d2e5;
+    box-shadow: 0px 0px 18px #30d2e5;
+    height: 40px;
+    width: 90px;
+    left: 10%;
+    top: 150px;
+  }
+  .block5 {
+    background-color: #da8ce2;
+    box-shadow: 0px 0px 18px #da8ce2;
+    height: 11px;
+    width: 52px;
+    top: 160px;
+    left: 35%;
+  }
+  .block6 {
+    background-color: #e0dca2;
+    box-shadow: 0px 0px 18px #e0dca2;
+    height: 65px;
+    width: 9px;
+    top: 200px;
+    left: 39%;
+  }
+  .block7 {
+    background-color: #30d2e5;
+    box-shadow: 0px 0px 18px #30d2e5;
+    top: 230px;
+    left: 55%;
+  }
+}
+// Music Start
+.music {
+  background-image: url("../assets/img/music-bg.png");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+// Roadmap Start
+.roadmap {
+  height: 200vh;
+  width: 100%;
+  background-image: url("../assets/img/sunset.png");
+  background-position: center;
+  background-size: cover;
+  padding-top: 100px;
+  box-sizing: border-box;
+  h2 {
+    font-family: "OrangeKid";
+    font-size: 100px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 10px;
+    color: black;
+  }
+  .roadmap-row {
+    margin-top: 100px;
+    justify-content: space-between;
+  }
+}
+.roadmap-box {
+  ul {
+    li {
+      color: black;
+      font-family: "OrangeKid";
+      font-size: 50px;
+      text-transform: uppercase;
+      text-align: center;
+      letter-spacing: 10px;
+      text-shadow: 0px 0px 2px black;
+    }
+  }
+}
+// Plane Start
+.plane {
+  background-image: linear-gradient(#0e0039, #4a0089);
+}
+// Team Start
+.team {
+  position: relative;
+  h2 {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 100px;
+    font-family: "OrangeKid";
+    color: white;
+    letter-spacing: 15px;
   }
 }
