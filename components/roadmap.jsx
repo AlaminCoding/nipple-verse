@@ -63,7 +63,7 @@ const Roadmap = () => {
             <li>
               -Nipple Art contest: Use nipples in the most creative ways and
               post them on twitter with the #nippleverse hashtag, the winner
-              gets 1ETH{" "}
+              gets 1ETH
             </li>
             <li>-SETH community airdrop to random holders </li>
             <li>
@@ -76,19 +76,16 @@ const Roadmap = () => {
           <p>100%-The ETHernal nippleverse</p>
           <ul>
             <li>
-              {" "}
-              -10% of royalty fees will get airdropped to holders as ETH monthly{" "}
+              -10% of royalty fees will get airdropped to holders as ETH monthly
             </li>
             <li> -7ETH community airdrop to random holders </li>
             <li>
-              {" "}
               -Nipples worth 65000$ will be bought and burned to lift the floor
-              price{" "}
+              price
             </li>
             <li>
-              {" "}
               -Special antimatter formula that can be used to enhance your
-              nipples in the future{" "}
+              nipples in the future
             </li>
             <li> -50% of royalty fees will be used to buyback and burn nfts</li>
           </ul>
