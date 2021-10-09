@@ -33,10 +33,11 @@ const Roadmap = () => {
             <li>-10% sales charity donation equal to aprox 32000$</li>
             <li>-1ETH+1 Nipple community airdrop to random holders</li>
             <li>
-              -Because rare traits aren't the only beautiful thing, there will
-              be a weekly contest where the community can vote the best looking
-              nipple winners will be displayed in a special gallery named
-              &apos;&apos;Beauty lays in the nipple of the beholder&apos;&apos;.
+              -Because rare traits aren&apos;t the only beautiful thing, there
+              will be a weekly contest where the community can vote the best
+              looking nipple winners will be displayed in a special gallery
+              named &apos;&apos;Beauty lays in the nipple of the
+              beholder&apos;&apos;.
             </li>
           </ul>
         </div>
