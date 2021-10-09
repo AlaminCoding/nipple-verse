@@ -1,5 +1,3 @@
-import { Col, Container, Row } from "react-bootstrap";
-
 const Roadmap = () => {
   return (
     <section className="roadmap">
