@@ -28,6 +28,9 @@ const Feature = () => {
                 <div className="block block5"></div>
                 <div className="block block6"></div>
                 <div className="block block7 common-block"></div>
+                <div className="block block8 common-block"></div>
+                <div className="block block9 common-block"></div>
+                <div className="block block10"></div>
               </div>
             </Col>
           </Row>
