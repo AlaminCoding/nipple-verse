@@ -162,18 +162,20 @@ nav {
   }
   p {
     color: white;
-    font-family: "OrangeKid";
+    font-family: "PixelarRegularW01-Regular";
     font-size: 28px;
     margin: 0 auto;
-    max-width: 920px;
+    max-width: 1000px;
     letter-spacing: 2px;
-    margin-top: -50px;
-    text-align: left;
-    line-height: 38px;
+    margin-top: -80px;
+    text-align: center;
+    line-height: 28px;
     span {
-      font-size: 34px;
-      letter-spacing: 7px;
+      font-size: 50px;
+      letter-spacing: 2px;
       word-spacing: 3px;
+      display: block;
+      margin-bottom: 40px;
     }
   }
 }
@@ -331,7 +333,7 @@ nav {
 .heading {
   width: 100%;
   height: 200px;
-  background-image: linear-gradient(#290062, #180134);
+  margin-bottom: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -339,7 +341,7 @@ nav {
     color: white;
     text-align: center;
     margin: 0;
-    font-family: "OrangeKid";
+    font-family: "PixelarRegularW01-Regular";
     text-transform: uppercase;
     font-size: 100px;
     letter-spacing: 10px;
@@ -347,7 +349,7 @@ nav {
 }
 .fimage-box {
   // text-align: right;
-  width: 332px;
+  width: 400px;
   margin: 0 auto;
 }
 @media screen and (max-width: 900px) {
@@ -356,7 +358,6 @@ nav {
   }
 }
 .main-feature {
-  padding-top: 200px;
   box-sizing: border-box;
   background-image: linear-gradient(#140143, #a100df, #0b0136);
   .main-feature-top {
@@ -497,42 +498,52 @@ nav {
 }
 // Roadmap Start
 .roadmap {
-  height: 220vh;
+  height: auto;
   width: 100%;
-  background-image: url("../assets/img/sunset.png");
-  background-position: center;
-  background-size: cover;
+  background-color: #00ffdf;
   padding-top: 100px;
-  padding-bottom: 100px;
   box-sizing: border-box;
   h2 {
-    font-family: "OrangeKid";
+    font-family: "PixelarRegularW01-Regular";
     font-size: 100px;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 10px;
     color: black;
   }
+  .heading-text {
+    font-family: "PixelarRegularW01-Regular";
+    font-size: 42px;
+    max-width: 1290px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 39.02px;
+    color: black;
+  }
+  .sunset-img {
+    margin-top: 40px;
+  }
 }
 .roadmap-text {
   padding-left: 15%;
-  font-family: "OrangeKid";
-  margin-top: 30px;
-  .roadmap-heading {
-    font-size: 28px;
-  }
+  font-family: "PixelarRegularW01-Regular";
+  margin-top: 50px;
   .roadmap-list {
-    margin-top: 30px;
+    margin-top: 40px;
     p {
-      font-size: 30px;
+      font-size: 48px;
       margin: 0;
     }
     ul {
       margin: 0;
       padding: 0;
-      max-width: 795px;
+      max-width: 1235px;
+      list-style: square;
+      margin-top: 30px;
+      padding-left: 40px;
       li {
-        font-size: 28px;
+        font-size: 36px;
+        line-height: 38px;
       }
     }
   }
@@ -553,7 +564,7 @@ nav {
     margin: 0;
     text-transform: uppercase;
     font-size: 100px;
-    font-family: "OrangeKid";
+    font-family: "PixelarRegularW01-Regular";
     color: white;
     letter-spacing: 15px;
   }
@@ -659,7 +670,7 @@ nav {
       span {
         font-size: 30px;
         display: block;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
       }
     }
   }
@@ -737,16 +748,19 @@ nav {
     padding: 0px 20px;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   .heading {
+    height: 150px;
     h2 {
-      font-size: 80px;
+      font-size: 60px;
     }
   }
 }
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 1000px) {
   .main-feature {
-    padding-top: 100px;
+    .heading {
+      margin-bottom: 0px;
+    }
     .main-feature-top {
       padding: 0px 20px;
     }
@@ -769,21 +783,41 @@ nav {
   }
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 1290px) {
+  .roadmap {
+    padding: 50px 0px 0px 0px;
+    .heading-text {
+      padding: 0px 20px;
+    }
+  }
+  .roadmap-text {
+    padding: 0px 20px;
+  }
+}
+@media screen and (max-width: 600px) {
   .roadmap {
     h2 {
       font-size: 60px;
     }
+    .heading-text {
+      font-size: 30px;
+      line-height: 31px;
+    }
   }
   .roadmap-text {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-@media screen and (max-width: 670px) {
-  .roadmap {
-    height: auto;
-    padding-bottom: 100px;
-    padding-top: 50px;
+    .roadmap-list {
+      p {
+        font-size: 31px;
+        line-height: 31px;
+        text-shadow: 0 0 1px black;
+      }
+      ul {
+        li {
+          font-size: 24px;
+          line-height: 30px;
+          text-shadow: 0px 0px 0.5px black;
+        }
+      }
+    }
   }
 }
