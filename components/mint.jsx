@@ -4,16 +4,19 @@ import mintImg from "../assets/img/min-img.png";
 const Mint = () => {
   return (
     <section className="mint">
-      <Row>
+      <Row className="flex-inverse">
         <Col xl={6}>
           <div className="mint-box">
             <h2 className="mint-heading">Mint</h2>
             <p>Enter the amount of nipples you would like to buy (5 max):</p>
+
             <div className="input-box">
-              <div className="input-wrapper">
-                <input type="text" />
+              <div className="input-btn">
+                <div className="input-wrapper">
+                  <input type="text" />
+                </div>
+                <button>Mint</button>
               </div>
-              <button>Mint</button>
               <h2 className="mint-total">
                 Total: <span>12 ETH</span>
               </h2>

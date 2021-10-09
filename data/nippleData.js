@@ -23,6 +23,8 @@ import n22 from "../assets/img/nipples/n22.png";
 import n23 from "../assets/img/nipples/n23.png";
 export const nippleFirst = [n1, n2];
 export const nippleMiddle = [
+  n1,
+  n2,
   n3,
   n4,
   n5,

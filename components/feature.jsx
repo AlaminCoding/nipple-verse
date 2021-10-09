@@ -1,6 +1,7 @@
 import { Col, Row } from "react-bootstrap";
 import Image from "next/image";
 import featureTopLogo from "../assets/img/feature-top-logo.png";
+import blockImage from "../assets/img/blocks.png";
 import { nippleFirst, nippleMiddle, nippleLast } from "../data/nippleData";
 import featureBG from "../assets/img/feature-bg.png";
 const Feature = () => {
@@ -12,14 +13,14 @@ const Feature = () => {
       <div className="main-feature">
         <div className="main-feature-top">
           <Row>
-            <Col xl={5}>
+            <Col xs={5}>
               <div className="feature-img">
                 <div className="fimage-box">
                   <Image src={featureTopLogo} alt="" />
                 </div>
               </div>
             </Col>
-            <Col xl={7}>
+            <Col xs={7}>
               <div className="blocks">
                 <div className="block block1"></div>
                 <div className="block block2 common-block"></div>
@@ -32,29 +33,30 @@ const Feature = () => {
                 <div className="block block9 common-block"></div>
                 <div className="block block10"></div>
               </div>
+              <div className="block-img">
+                <Image src={blockImage} alt="" />
+              </div>
             </Col>
           </Row>
-          <Row className="nipple-first-row">
-            {nippleFirst.map((element, index) => (
-              <Col xs="6" sm={6} md={4} lg={2} key={index}>
-                <div className="nipple-box">
-                  <Image src={element} alt="" />
-                </div>
-              </Col>
-            ))}
-          </Row>
+
           <Row className="mt-3">
             {nippleMiddle.map((element, index) => (
-              <Col xs="6" sm={6} md={4} lg={2} key={index}>
+              <Col
+                xs={3}
+                sm={3}
+                md={3}
+                lg={index < 1 ? { span: 2, offset: 8 } : 2}
+                key={index}
+              >
                 <div className="nipple-box">
                   <Image src={element} alt="" />
                 </div>
               </Col>
             ))}
           </Row>
-          <Row className="nipple-last-row mt-3">
+          <Row className="nipple-last-row">
             {nippleLast.map((element, index) => (
-              <Col xs="6" sm={6} md={4} lg={2} key={index}>
+              <Col xs={3} sm={3} md={3} lg={2} key={index}>
                 <div className="nipple-box">
                   <Image src={element} alt="" />
                 </div>

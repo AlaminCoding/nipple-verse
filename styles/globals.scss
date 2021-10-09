@@ -1,4 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@font-face {
+  font-family: "PixelarRegularW01-Regular";
+  src: url("//db.onlinewebfonts.com/t/b2e75c336df191233b3096682c9ee6be.eot");
+  src: url("//db.onlinewebfonts.com/t/b2e75c336df191233b3096682c9ee6be.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/b2e75c336df191233b3096682c9ee6be.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/b2e75c336df191233b3096682c9ee6be.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/b2e75c336df191233b3096682c9ee6be.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/b2e75c336df191233b3096682c9ee6be.svg#PixelarRegularW01-Regular")
+      format("svg");
+}
+@import url("//db.onlinewebfonts.com/c/b2e75c336df191233b3096682c9ee6be?family=PixelarRegularW01-Regular");
 @font-face {
   font-family: "OrangeKid";
   src: local("OrangeKid-Regular"), url("orange kid.woff") format("woff");
@@ -31,6 +45,103 @@ ul {
 }
 .body-wrapper {
   overflow-x: hidden;
+}
+// Navbar Start
+nav {
+  height: 80px;
+  width: 100%;
+  background-color: #12fed8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+  box-sizing: border-box;
+}
+.menu {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  h2 {
+    display: none;
+  }
+  li {
+    margin-right: 35px;
+    a {
+      color: black;
+      // font-family: "OrangeKid";
+      font-family: "PixelarRegularW01-Regular";
+      text-decoration: none;
+      font-size: 28px;
+      letter-spacing: 2px;
+    }
+  }
+}
+.logo-icons {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  li {
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 8px;
+    margin-left: 18px;
+  }
+}
+.toggler {
+  display: none;
+}
+@media screen and (max-width: 980px) {
+  .toggler {
+    display: block;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+  nav {
+    position: relative;
+    padding: 0px 10px;
+  }
+  .menu {
+    position: fixed;
+    height: 100vh;
+    width: 320px;
+    top: 0px;
+    left: -100%;
+    background-color: #2d0067;
+    z-index: 2;
+    flex-direction: column;
+    padding-top: 64px;
+    text-align: center;
+    transition: 0.5s;
+    h2 {
+      display: block;
+      font-family: "PixelarRegularW01-Regular";
+      color: white;
+      font-size: 48px;
+      margin: 48px 0px;
+      font-weight: 700;
+    }
+    li {
+      margin: 0;
+      z-index: 3;
+      a {
+        color: white;
+        font-size: 32px;
+        margin-bottom: 10px;
+        display: inline-block;
+      }
+    }
+  }
+  .open-menu {
+    left: 0%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .menu {
+    width: 100%;
+  }
 }
 // Banner Start
 .banner {
@@ -126,6 +237,9 @@ ul {
     display: flex;
     align-items: center;
     margin-top: 32px;
+    .input-btn {
+      display: flex;
+    }
     input,
     button {
       height: 70px;
@@ -240,7 +354,14 @@ ul {
   }
 }
 .fimage-box {
-  text-align: right;
+  // text-align: right;
+  width: 332px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 900px) {
+  .fimage-box {
+    width: 100%;
+  }
 }
 .main-feature {
   padding-top: 200px;
@@ -259,6 +380,11 @@ ul {
 .nipple-last-row {
   justify-content: flex-end;
 }
+@media screen and (max-width: 992px) {
+  .nipple-last-row {
+    justify-content: flex-start;
+  }
+}
 .feature-bg-img {
   margin-top: -100px;
 }
@@ -268,10 +394,10 @@ ul {
   width: 100%;
   .block {
     position: absolute;
-    animation-name: rotate;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    // animation-name: rotate;
+    // animation-duration: 4s;
+    // animation-iteration-count: infinite;
+    // animation-timing-function: linear;
   }
   @keyframes rotate {
     0% {
@@ -356,6 +482,20 @@ ul {
     left: 70%;
   }
 }
+.block-img {
+  display: none;
+}
+@media screen and (max-width: 1000px) {
+  .blocks {
+    display: none;
+  }
+  .block-img {
+    display: block;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+}
 // Music Start
 .music {
   background-image: url("../assets/img/music-bg.png");
@@ -365,12 +505,13 @@ ul {
 }
 // Roadmap Start
 .roadmap {
-  height: 200vh;
+  height: 220vh;
   width: 100%;
   background-image: url("../assets/img/sunset.png");
   background-position: center;
   background-size: cover;
   padding-top: 100px;
+  padding-bottom: 100px;
   box-sizing: border-box;
   h2 {
     font-family: "OrangeKid";
@@ -380,23 +521,27 @@ ul {
     letter-spacing: 10px;
     color: black;
   }
-  .roadmap-row {
-    margin-top: 100px;
-    justify-content: space-between;
-  }
 }
-.roadmap-box {
-  ul {
-    margin: 0;
-    padding: 0;
-    li {
-      color: black;
-      font-family: "OrangeKid";
-      font-size: 50px;
-      text-transform: uppercase;
-      text-align: center;
-      letter-spacing: 10px;
-      text-shadow: 0px 0px 2px black;
+.roadmap-text {
+  padding-left: 15%;
+  font-family: "OrangeKid";
+  margin-top: 30px;
+  .roadmap-heading {
+    font-size: 28px;
+  }
+  .roadmap-list {
+    margin-top: 30px;
+    p {
+      font-size: 30px;
+      margin: 0;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      max-width: 795px;
+      li {
+        font-size: 28px;
+      }
     }
   }
 }
@@ -445,26 +590,52 @@ ul {
 @media screen and (max-width: 1200px) {
   .mint {
     height: auto;
+    padding-bottom: 50px;
+    .flex-inverse {
+      flex-direction: column-reverse;
+    }
   }
   .mint-box {
     padding-left: 50px;
   }
   .mint-img-wrapper {
-    position: static;
-    height: auto;
-    margin-top: 50px;
+    height: 90px;
     .mint-img {
-      position: static;
-      transform: translateX(0);
+      width: 290px;
+      left: 90%;
+      transform: translateX(-90%);
     }
   }
   .feature-bg-img {
     margin-top: 0;
   }
 }
+
 @media screen and (max-width: 1000px) {
+  .mint-img-wrapper {
+    .mint-img {
+      top: -150px;
+    }
+  }
   .feature-bg-img {
     margin-top: 50px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .mint-img-wrapper {
+    height: 45px;
+    .mint-img {
+      width: 230px;
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .mint-img-wrapper {
+    height: 45px;
+    .mint-img {
+      width: 195px;
+      top: -99px;
+    }
   }
 }
 @media screen and (max-width: 1200px) {
@@ -475,16 +646,6 @@ ul {
     height: 430px;
     width: 100%;
     margin-top: 50px;
-  }
-  .roadmap {
-    height: 100vh;
-    .roadmap-box {
-      ul {
-        li {
-          font-size: 40px;
-        }
-      }
-    }
   }
 }
 @media screen and (max-width: 940px) {
@@ -502,8 +663,11 @@ ul {
       margin-top: -100px;
       font-size: 24px;
       line-height: 32px;
+      text-align: center;
       span {
-        font-size: 26px;
+        font-size: 30px;
+        display: block;
+        margin-bottom: 50px;
       }
     }
   }
@@ -511,7 +675,8 @@ ul {
 
 @media screen and (max-width: 500px) {
   .banner {
-    padding-top: 20px;
+    background-image: url("../assets/img/banner-mobile.png");
+    padding-top: 75px;
     padding-bottom: 100px;
     height: auto;
     p {
@@ -520,7 +685,7 @@ ul {
     }
   }
 }
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 1000px) {
   .four {
     h2 {
       left: 20px;
@@ -530,7 +695,7 @@ ul {
     }
   }
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 1000px) {
   .four {
     h2 {
       font-size: 200px;
@@ -538,20 +703,23 @@ ul {
     }
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 700px) {
   .four {
     height: 210px;
     h2 {
-      font-size: 160px;
-      bottom: -52px;
+      font-size: 125px;
+      bottom: -40px;
     }
   }
 }
 @media screen and (max-width: 600px) {
   .mint-box {
     .input-box {
+      flex-direction: column;
+      align-items: flex-start;
       .mint-total {
         font-size: 36px;
+        margin-top: 20px;
       }
     }
   }
@@ -561,20 +729,15 @@ ul {
     padding-left: 20px;
     padding-right: 20px;
     .input-box {
-      flex-direction: column;
-      align-items: flex-start;
+      input,
+      button {
+        width: 140px;
+      }
       .input-wrapper {
-        margin-right: 0;
         margin-bottom: 20px;
         &:before {
-          width: 102%;
+          width: 106%;
         }
-        input {
-          width: 100%;
-        }
-      }
-      .mint-total {
-        margin-top: 20px;
       }
     }
   }
@@ -597,25 +760,7 @@ ul {
     }
   }
 }
-@media screen and (max-width: 600px) {
-  .roadmap {
-    padding: 60px 0px;
-    height: auto;
-    h2 {
-      font-size: 70px;
-    }
-    .roadmap-row {
-      margin-top: 30px;
-    }
-    .roadmap-box {
-      ul {
-        li {
-          font-size: 32px;
-        }
-      }
-    }
-  }
-}
+
 @media screen and (max-width: 900px) {
   .team {
     h2 {
@@ -629,5 +774,24 @@ ul {
       font-size: 60px;
       text-shadow: 0px 0px 10px #4a0089;
     }
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .roadmap {
+    h2 {
+      font-size: 60px;
+    }
+  }
+  .roadmap-text {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media screen and (max-width: 670px) {
+  .roadmap {
+    height: auto;
+    padding-bottom: 100px;
+    padding-top: 50px;
   }
 }
