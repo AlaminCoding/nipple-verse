@@ -32,8 +32,8 @@ const Feature = () => {
             </Col>
           </Row>
           <Row className="nipple-first-row">
-            {nippleFirst.map((element) => (
-              <Col md={2}>
+            {nippleFirst.map((element, index) => (
+              <Col md={2} key={index}>
                 <div className="nipple-box">
                   <Image src={element} alt="" />
                 </div>
@@ -41,8 +41,8 @@ const Feature = () => {
             ))}
           </Row>
           <Row className="mt-3">
-            {nippleMiddle.map((element) => (
-              <Col md={2}>
+            {nippleMiddle.map((element, index) => (
+              <Col md={2} key={index}>
                 <div className="nipple-box">
                   <Image src={element} alt="" />
                 </div>
@@ -50,8 +50,8 @@ const Feature = () => {
             ))}
           </Row>
           <Row className="nipple-last-row mt-3">
-            {nippleLast.map((element) => (
-              <Col md={2}>
+            {nippleLast.map((element, index) => (
+              <Col md={2} key={index}>
                 <div className="nipple-box">
                   <Image src={element} alt="" />
                 </div>
