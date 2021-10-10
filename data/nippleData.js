@@ -15,14 +15,8 @@ import n14 from "../assets/img/nipples/n14.png";
 import n15 from "../assets/img/nipples/n15.png";
 import n16 from "../assets/img/nipples/n16.png";
 import n17 from "../assets/img/nipples/n17.png";
-import n18 from "../assets/img/nipples/n18.png";
-import n19 from "../assets/img/nipples/n19.png";
-import n20 from "../assets/img/nipples/n20.png";
-import n21 from "../assets/img/nipples/n21.png";
-import n22 from "../assets/img/nipples/n22.png";
-import n23 from "../assets/img/nipples/n23.png";
-export const nippleFirst = [n1, n2];
-export const nippleMiddle = [
+import n from "../assets/img/nipples/n.gif";
+export const allNipples = [
   n1,
   n2,
   n3,
@@ -40,8 +34,5 @@ export const nippleMiddle = [
   n15,
   n16,
   n17,
-  n18,
-  n19,
-  n20,
+  n,
 ];
-export const nippleLast = [n21, n22, n23];

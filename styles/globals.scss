@@ -366,11 +366,20 @@ nav {
   box-sizing: border-box;
   background-image: linear-gradient(#140143, #a100df, #0b0136);
   .main-feature-top {
-    padding: 0px 85px;
+    padding: 0px 300px;
+    .grid-container {
+      display: grid;
+      // grid-template-columns: auto auto auto auto auto auto auto;
+      grid-gap: 0px;
+      grid-template-areas: ". . . . . . ." ". . . . . gifArea gifArea" ". . . . . gifArea gifArea";
+      .nipple-box {
+        display: inline-grid;
+      }
+      .last-nipple-box {
+        grid-area: gifArea;
+      }
+    }
   }
-}
-.nipple-box {
-  margin-top: 20px;
 }
 .nipple-first-row {
   justify-content: flex-end;
@@ -781,7 +790,7 @@ nav {
     }
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1500px) {
   .main-feature {
     .heading {
       margin-bottom: 0px;

@@ -2,8 +2,8 @@ import { Col, Row } from "react-bootstrap";
 import Image from "next/image";
 import featureTopLogo from "../assets/img/feature.gif";
 import blockImage from "../assets/img/blocks.png";
-import { nippleFirst, nippleMiddle, nippleLast } from "../data/nippleData";
-import featureBG from "../assets/img/feature-bg.png";
+import { allNipples } from "../data/nippleData";
+// import featureBG from "../assets/img/feature-bg.png";
 const Feature = () => {
   return (
     <section className="feature" id="feature">
@@ -41,30 +41,20 @@ const Feature = () => {
           </Col>
         </Row>
         <div className="main-feature-top">
-          <Row className="mt-3">
-            {nippleMiddle.map((element, index) => (
-              <Col
-                xs={3}
-                sm={3}
-                md={3}
-                lg={index < 1 ? { span: 2, offset: 8 } : 2}
+          <div className="grid-container">
+            {allNipples.map((element, index) => (
+              <div
+                className={
+                  index === allNipples.length - 1
+                    ? "nipple-box last-nipple-box"
+                    : "nipple-box"
+                }
                 key={index}
               >
-                <div className="nipple-box">
-                  <Image src={element} alt="" />
-                </div>
-              </Col>
+                <Image src={element} alt="" />
+              </div>
             ))}
-          </Row>
-          <Row className="nipple-last-row">
-            {nippleLast.map((element, index) => (
-              <Col xs={3} sm={3} md={3} lg={2} key={index}>
-                <div className="nipple-box">
-                  <Image src={element} alt="" />
-                </div>
-              </Col>
-            ))}
-          </Row>
+          </div>
         </div>
 
         <div className="feature-bg-img">
