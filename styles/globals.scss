@@ -380,6 +380,9 @@ nav {
 }
 .feature-bg-img {
   margin-top: -100px;
+  img {
+    width: 100%;
+  }
 }
 .blocks {
   position: relative;
@@ -522,6 +525,9 @@ nav {
   }
   .sunset-img {
     margin-top: 40px;
+    img {
+      width: 100%;
+    }
   }
 }
 .roadmap-text {
@@ -551,10 +557,16 @@ nav {
 // Plane Start
 .plane {
   background-image: linear-gradient(#0e0039, #4a0089);
+  img {
+    width: 100%;
+  }
 }
 // Team Start
 .team {
   position: relative;
+  img {
+    width: 100%;
+  }
   h2 {
     position: absolute;
     top: 60px;

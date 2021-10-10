@@ -4,7 +4,7 @@ const Team = () => {
   return (
     <section className="team">
       <h2>Team</h2>
-      <Image src={team} alt="" />
+      <img src="/team.png" alt="" />
     </section>
   );
 };

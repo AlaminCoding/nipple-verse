@@ -3,7 +3,7 @@ import Image from "next/image";
 const Plane = () => {
   return (
     <section className="plane">
-      <Image src={plane} alt="" />
+      <img src="/plane.png" alt="" />
     </section>
   );
 };

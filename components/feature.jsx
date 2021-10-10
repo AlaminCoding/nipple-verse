@@ -68,7 +68,7 @@ const Feature = () => {
         </div>
 
         <div className="feature-bg-img">
-          <Image src={featureBG} alt="" />
+          <img src="/feature-bg.png" alt="" />
         </div>
       </div>
     </section>

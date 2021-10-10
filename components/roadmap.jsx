@@ -95,7 +95,7 @@ const Roadmap = () => {
         </div>
       </div>
       <div className="sunset-img">
-        <Image src={Sunset} alt="" />
+        <img src="/sunset.png" alt="" />
       </div>
     </section>
   );
