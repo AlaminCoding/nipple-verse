@@ -63,7 +63,7 @@ nav {
       // font-family: "OrangeKid";
       font-family: "PixelarRegularW01-Regular";
       text-decoration: none;
-      font-size: 28px;
+      font-size: 32px;
       letter-spacing: 2px;
     }
   }
@@ -138,7 +138,7 @@ nav {
 // Banner Start
 .banner {
   position: relative;
-  height: 100vh;
+  height: auto;
   width: 100%;
   background-image: url("../assets/img/banner.png");
   background-position: center;
@@ -146,6 +146,7 @@ nav {
   padding-top: 68px;
   box-sizing: border-box;
   text-align: center;
+  padding-bottom: 200px;
   h2 {
     font-family: "Joystick";
     color: #e1f4f1;
@@ -153,25 +154,28 @@ nav {
     -webkit-text-stroke-color: #10badb;
     text-shadow: 0px 0px 15px #e1f4f1;
     text-align: center;
-    font-size: 60px;
+    font-size: 80px;
     font-weight: 700;
-    line-height: 45px;
+    line-height: 75px;
     span {
-      font-size: 40px;
+      font-size: 60px;
     }
+  }
+  .banner-img {
+    margin-top: 50px;
   }
   p {
     color: white;
     font-family: "PixelarRegularW01-Regular";
-    font-size: 28px;
+    font-size: 40px;
     margin: 0 auto;
-    max-width: 1000px;
+    max-width: 1380px;
     letter-spacing: 2px;
-    margin-top: -80px;
+    margin-top: -60px;
     text-align: center;
-    line-height: 28px;
+    line-height: 36px;
     span {
-      font-size: 50px;
+      font-size: 60px;
       letter-spacing: 2px;
       word-spacing: 3px;
       display: block;
@@ -188,6 +192,7 @@ nav {
   background-size: cover;
   background-position: center;
   position: relative;
+
   h2 {
     font-size: 300px;
     font-family: "MonoAMano";
@@ -504,7 +509,7 @@ nav {
   height: auto;
   width: 100%;
   background-color: #00ffdf;
-  padding-top: 100px;
+  padding-top: 40px;
   box-sizing: border-box;
   h2 {
     font-family: "PixelarRegularW01-Regular";
@@ -694,6 +699,13 @@ nav {
     padding-top: 75px;
     padding-bottom: 100px;
     height: auto;
+    h2 {
+      font-size: 60px;
+      line-height: 56px;
+      span {
+        font-size: 48px;
+      }
+    }
     p {
       margin-top: -50px;
       line-height: 29px;
@@ -760,11 +772,12 @@ nav {
     padding: 0px 20px;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   .heading {
     height: 150px;
     h2 {
       font-size: 60px;
+      line-height: 60px;
     }
   }
 }

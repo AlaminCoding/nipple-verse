@@ -2,11 +2,13 @@ import Image from "next/image";
 import logo from "../assets/img/logo.png";
 const Banner = () => {
   return (
-    <section className="banner">
+    <section className="banner" id="banner">
       <h2>
         WELCOME <br /> <span>TO THE</span>
       </h2>
-      <Image src={logo} alt="site-logo" />
+      <div className="banner-img">
+        <Image src={logo} alt="site-logo" />
+      </div>
       <p>
         <span>The world has chastised them from public view.</span> They belong
         to all of us yet we are ashamed of them because society taught us so.

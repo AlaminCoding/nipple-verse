@@ -2,7 +2,7 @@ import Sunset from "../assets/img/sunset.png";
 import Image from "next/image";
 const Roadmap = () => {
   return (
-    <section className="roadmap">
+    <section className="roadmap" id="roadmap">
       <h2>Roadmap</h2>
       <p className="heading-text">
         10% of all funds collected will be contributed to a charity (With

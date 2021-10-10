@@ -6,13 +6,13 @@ import { nippleFirst, nippleMiddle, nippleLast } from "../data/nippleData";
 import featureBG from "../assets/img/feature-bg.png";
 const Feature = () => {
   return (
-    <section className="feature">
+    <section className="feature" id="feature">
       {/* <div className="heading">
         <h2>Feature</h2>
       </div> */}
       <div className="main-feature">
         <div className="heading">
-          <h2>Feature</h2>
+          <h2>Featured Nipples</h2>
         </div>
         <Row>
           <Col xs={5}>

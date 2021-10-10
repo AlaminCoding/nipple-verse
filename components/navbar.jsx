@@ -21,19 +21,19 @@ const Navbar = () => {
       <ul className={openNav ? "menu open-menu" : "menu"} onClick={closeMenu}>
         <h2>NippleVerse</h2>
         <li>
-          <a href="https://www.google.com">About</a>
+          <a href="#banner">About</a>
         </li>
         <li>
-          <a href="#">Featured</a>
+          <a href="#feature">Featured</a>
         </li>
         <li>
-          <a href="#">Roadmap</a>
+          <a href="#roadmap">Roadmap</a>
         </li>
         <li>
-          <a href="#">Team</a>
+          <a href="#team">Team</a>
         </li>
         <li>
-          <a href="#">Connect Wallet</a>
+          <a href="#four">Connect Wallet</a>
         </li>
       </ul>
       <ul className="logo-icons">
