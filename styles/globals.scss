@@ -366,10 +366,10 @@ nav {
   box-sizing: border-box;
   background-image: linear-gradient(#140143, #a100df, #0b0136);
   .main-feature-top {
-    padding: 0px 300px;
+    padding: 0px 10%;
+    margin-top: 100px;
     .grid-container {
       display: grid;
-      // grid-template-columns: auto auto auto auto auto auto auto;
       grid-gap: 0px;
       grid-template-areas: ". . . . . . ." ". . . . . gifArea gifArea" ". . . . . gifArea gifArea";
       .nipple-box {
@@ -377,6 +377,15 @@ nav {
       }
       .last-nipple-box {
         grid-area: gifArea;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  .main-feature {
+    .main-feature-top {
+      .grid-container {
+        grid-template-areas: ". . ." ". . ." ". . ." ". . ." ". . ." ". gifArea gifArea" ". gifArea gifArea";
       }
     }
   }
@@ -393,7 +402,7 @@ nav {
   }
 }
 .feature-bg-img {
-  margin-top: -100px;
+  margin-top: 100px;
   img {
     width: 100%;
   }
@@ -636,7 +645,7 @@ nav {
     }
   }
   .feature-bg-img {
-    margin-top: 0;
+    margin-top: 80px;
   }
 }
 
